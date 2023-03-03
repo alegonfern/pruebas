@@ -1,0 +1,52 @@
+public class Main {
+    public static void main (String[] args){
+        int numeroIf = -1;
+        int numeroWhile= 0; //iniciación variable
+        int numeroDoWhile = 0;
+
+        if(numeroIf > 0) {//caso IF
+            System.out.println("El número es positivo");
+        } else if(numeroIf < 0) {
+            System.out.println("El número es negativo");
+        } else {
+            System.out.println("El número es cero");
+        }
+
+        while (numeroWhile<3) // Caso While
+        {
+            System.out.println(numeroWhile);
+            numeroWhile++;
+
+        }
+
+        do {
+            System.out.println("El número es: " + numeroDoWhile);
+            numeroDoWhile++; // incrementamos el valor de la variable en 1
+        } while(numeroDoWhile < 3);
+// Bucle For
+        for(int numeroFor = 0; numeroFor <= 3; numeroFor++) {
+            System.out.println("El número es: " + numeroFor);
+        }
+
+        // Switch
+        String estacion = "Verano";
+        switch(estacion) {
+            case "Invierno":
+                System.out.println("Es invierno.");
+                break;
+            case "Primavera":
+                System.out.println("Es primavera.");
+                break;
+            case "Verano":
+                System.out.println("Es verano.");
+                break;
+            case "Otoño":
+                System.out.println("Es otoño.");
+                break;
+            default:
+                System.out.println("No es una estación del año.");
+                break;
+        }
+
+        }
+    }
